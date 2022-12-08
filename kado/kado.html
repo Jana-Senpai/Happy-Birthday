@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SURPRISEE!!!</title>
+    <link rel="stylesheet" href="kado.css" />
+  </head>
+  <body>
+    <div class="present">
+      <div class="lid">
+        <span></span>
+      </div>
+      <div class="greeting">
+        <p>
+          <b> SELAMAT ULANG TAHUN,</b><br />
+          semoga sehat selalu <br />
+          dan dimudahkan urusannya beserta dipanjangkan umurnya.
+        </p>
+        <h2>Jangan Lupa traktirannya!!!</h2>
+      </div>
+      <div class="box">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="btn">
+      <button onclick="openGift()" class="btnOpen">Open</button>
+      <a href="/index.html"><button class="btnOpen">Back</button></a>
+    </div>
+
+    <script>
+      function openGift() {
+        var present = document.querySelector(".present");
+        present.classList.toggle("present-active");
+      }
+    </script>
+  </body>
+</html>

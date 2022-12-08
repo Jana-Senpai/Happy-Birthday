@@ -1,0 +1,113 @@
+body {
+  background: url("/src/img/background1.jpg");
+  background-size: cover;
+  padding-top: 150px;
+  overflow: hidden;
+}
+
+.present {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.box,
+.lid {
+  background: -webkit-radial-gradient(yellow 15%, transparent 15.1%),
+    -webkit-radial-gradient(black 15%, transparent 15.1%), #ff1e00;
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  position: relative;
+  margin: 0 auto;
+}
+.box {
+  width: 280px;
+  height: 250px;
+  left: -30px;
+}
+.lid {
+  width: 300px;
+  height: 80px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0 2px;
+  background-color: #ff1e00;
+  /* transitions */
+  top: 0;
+  left: -40px;
+  transition: top ease-out 0.5s, left ease-out 0.5s, transform ease-out 0.5s;
+}
+.box span,
+.lid span {
+  position: absolute;
+  display: block;
+  background: #f5eddc;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+.box span:first-child {
+  width: 100%;
+  height: 60px;
+  top: 80px;
+}
+.box span:last-child,
+.lid span {
+  width: 60px;
+  height: 100%;
+  left: 120px;
+}
+.lid span {
+  left: 135px;
+}
+.greeting {
+  font-size: 30px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  position: relative;
+  height: 0;
+  margin: 0 auto;
+  top: 10px;
+  transition: all ease-out 0.7s;
+}
+.greeting p {
+  font-size: 20px;
+  margin: 0;
+}
+.greeting h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.btn {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btnOpen {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #009eff;
+  font-family: "Poppins";
+}
+
+/* hover effects */
+.present:hover .lid {
+  top: -160px;
+  transform: rotateZ(60deg);
+  left: 140px;
+}
+.present:hover .greeting {
+  top: -240px;
+}
+
+.present-active .lid {
+  top: -150px;
+  transform: rotateZ(60deg);
+  left: 140px;
+}
+
+.present-active .greeting {
+  top: -240px;
+}

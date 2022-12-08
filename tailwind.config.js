@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["index.html", "./kado/kado.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        josefin: "Josefin Sans",
+        poppins: "Poppins",
+      },
+      colors: {
+        dark: "#0f172a",
+      },
+    },
   },
   plugins: [],
 };

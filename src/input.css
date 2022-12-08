@@ -3,18 +3,5 @@
 @tailwind utilities;
 
 .card {
-  @apply min-w-[325px] h-[350px] leading-[20px] bg-[#C147E9]  rounded-lg shadow-lg;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #999;
-  border-radius: 20px;
-}
-::-webkit-scrollbar-thumb {
-  background: #232323;
-  border-radius: 20px;
+  @apply min-w-[325px] h-[350px] leading-[20px] bg-[#C147E9] bg-opacity-60  rounded-lg shadow-lg;
 }
