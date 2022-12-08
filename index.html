@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELAMAT ULANG TAHUN!!!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="content" class="hidden">
+      <header>
+        <div class="container">
+          <h1
+            class="font-poppins text-center text-2xl mt-20 font-bold sm:text-sm"
+          >
+            ~Hallo,
+            <span id="user" class="font-bold text-teal-500"></span>~
+          </h1>
+        </div>
+      </header>
+
+      <!-- Start horizontal greeting -->
+      <section id="biodata" class="bg-[#7743DB] mt-20">
+        <!-- Content -->
+
+        <div
+          id="container"
+          class="max-h-[400px] flex overflow-x-auto overflow-y-hidden p-5"
+        >
+          <!-- Item 1 -->
+          <div id="item" class="card">
+            <!-- Gambar Gojo 1 -->
+            <img
+              src="/src/ichika-nakano/ichika1.png"
+              alt="Gojo"
+              class="w-[12.5rem] h-[12.5rem] mx-auto"
+            />
+            <div class="font-poppins text-[1rem] pl-4 text-dark">
+              <p class="text-center mt-10 font-bold text-2xl">
+                Selamat Ulang Tahun <br />
+                <span id="user" class="font-bold text-teal-500"></span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div id="item" class="card ml-40">
+            <!-- Gambar karma -->
+            <img
+              src="/src/nino-nakano/nino1.png"
+              alt="Karma1"
+              class="w-[12.5rem] h-[12.5rem] mx-auto"
+            />
+            <div class="font-poppins text-[1rem] pl-4 text-dark mt-5">
+              <p class="text-center mt-10 font-bold text-2xl">
+                Maaf kan saya jika ada banyak salah
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div id="item" class="card ml-40">
+            <!-- gambar toji -->
+            <img
+              src="/src/miku-nakano/miku1.png"
+              alt="Toji Fushiguro"
+              class="w-[12.5rem] h-[12.5rem] mx-auto"
+            />
+            <div class="font-poppins text-[1rem] pl-2 text-dark">
+              <p class="text-center mt-10 font-bold text-2xl">
+                Saya hanya bisa memberi web simple ini
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div id="item" class="card ml-40">
+            <!-- Gambar tanaka -->
+            <img
+              src="/src/yotsuba-nakano/yotsuba1.png"
+              alt="Tanaka1"
+              class="w-[12.5rem] h-[12.5rem] mx-auto"
+            />
+            <div class="font-poppins text-[1rem] pl-2 text-dark">
+              <p class="text-center mt-10 font-bold text-2xl">
+                Sekian dari saya
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div id="item" class="card ml-40">
+            <!-- Gambar rika -->
+            <img
+              src="/src/itsuki-nakano/itsuki1.png"
+              alt="Rika1"
+              class="w-[12.5rem] h-[12.5rem] mx-auto"
+            />
+            <div class="font-poppins text-[1rem] pl-1 pt-5 text-dark">
+              <p class="text-center mt-10 font-bold text-2xl">
+                Coba klik kado nya sekarang
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <h2 class="font-poppins text-2xl font-semibold text-dark mt-10">
+          Geser Yaaa ➡️
+        </h2>
+      </div>
+      <!-- End horizontal greeting -->
+
+      <!-- Start Present/gift -->
+      <section>
+        <div class="container">
+          <div
+            class="w-[5rem] h-[5rem] mx-auto bg-black flex items-center justify-center mt-10 mb-10 rounded-full shadow-lg"
+          >
+            <a href="#">
+              <img
+                width="50px"
+                height="50px"
+                src="/src/img/kado.png"
+                alt="kado"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Start PopUp masukkan nama -->
+    <div id="PopUP" class="container absolute bottom-[50%] block">
+      <div
+        class="mx-auto w-80 h-52 bg-cyan-500 bg-opacity-95 rounded-lg shadow-lg font-poppins"
+      >
+        <form>
+          <div class="pt-10 text-center">
+            <label for="name">Masukkan Nama</label> <br />
+            <input type="text" id="name" class="bg-slate-200" />
+          </div>
+          <div class="text-center">
+            <button
+              onclick="lihat()"
+              class="w-20 border rounded-lg shadow-lg bg-white mt-10"
+            >
+              Kirim
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End PopUp masukkan nama -->
+
+    <script>
+      function lihat() {
+        var user = document.getElementById("name").value;
+        document.getElementById("user").innerHTML = user;
+        Tampilkan();
+        Sembunyikan();
+      }
+
+      function Tampilkan() {
+        var content = document.getElementById("content");
+        if (content.style.display == "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      }
+
+      function Sembunyikan() {
+        var popUp = document.getElementById("PopUP");
+        if (popUp.style.display == "block") {
+          popUp.style.display = "none";
+        } else {
+          popUp.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
