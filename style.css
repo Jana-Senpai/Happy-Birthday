@@ -703,7 +703,7 @@ video {
   --tw-bg-opacity: 0.7;
 }
 
-.bg-\[url\(\'\/src\/img\/background2\.jpg\'\)\] {
+.bg-\[url\(\'\./src\/img\/background2\.jpg\'\)\] {
   background-image: url('./src/img/background2.jpg');
 }
 
