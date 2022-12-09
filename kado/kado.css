@@ -1,5 +1,5 @@
 body {
-  background: url("./src/img/background1.jpg");
+  background: url("../src/img/background1.jpg");
   background-size: cover;
   padding-top: 150px;
   overflow: hidden;
